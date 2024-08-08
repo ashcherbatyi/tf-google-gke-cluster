@@ -15,7 +15,6 @@ resource "google_container_cluster" "this" {
     workload_pool = "${var.GOOGLE_PROJECT}.svc.id.goog"
   }
   node_config {
-        disk_size_gb = 50 # This will set to 50 instead of 100
         workload_metadata_config {
       mode = "GKE_METADATA"
     }
